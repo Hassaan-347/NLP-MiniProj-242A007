@@ -47,7 +47,7 @@ def clean_text(text):
 # -----------------------------
 @st.cache_resource
 def train_model():
-    data_path = Path(__file__).parent / "Sentiment Collection_Expanded(3).csv"
+    data_path = Path(__file__).parent / "dataset.csv"
 
     if not data_path.exists():
         raise FileNotFoundError(
