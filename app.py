@@ -13,12 +13,12 @@ from sklearn.utils import resample
 # Page configuration
 # -----------------------------
 st.set_page_config(
-    page_title="Animated Series Sentiment Analysis",
+    page_title="Sentiment Animated",
     page_icon="🎬",
     layout="centered",
 )
 
-st.title("🎬 Animated Series Sentiment Analysis")
+st.title("🎬 Sentiment Animated")
 st.write(
     "Enter a viewer comment and the model will classify its overall sentiment "
     "as **Positive**, **Negative**, or **Neutral**."
@@ -180,6 +180,8 @@ if st.button("Analyze Sentiment", type="primary", use_container_width=True):
 # -----------------------------
 with st.sidebar:
     st.header("Project Information")
+    st.write("**Hassaan Shaikh**")
+    st.write("**242A007**")
     st.write("**Dataset:** 215 comments")
     st.write("**Classes:** Positive, Negative, Neutral")
     st.write("**Features:** Unigram TF-IDF")
@@ -188,6 +190,5 @@ with st.sidebar:
     st.write("**Training balance:** 70 / 70 / 70")
     st.caption(
         "The training data is balanced using random oversampling. "
-        "The model follows the same preprocessing and training pipeline "
-        "used in the project notebook."
+        "The model can make mistakes during prediction."
     )
